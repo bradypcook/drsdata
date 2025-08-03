@@ -3,6 +3,8 @@
  */
 const nextConfig = {
   output: "export",
+  basePath: "/drsdata",
+  assetPrefix: "/drsdata",
   images: {
     unoptimized: true,
   },
