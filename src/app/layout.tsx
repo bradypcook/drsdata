@@ -9,6 +9,8 @@ const orbitron = Orbitron({
   display: "swap",
 });
 
+const basePath = process.env.NODE_ENV === 'production' ? '/drsdata' : '';
+
 export const metadata: Metadata = {
   title: {
     default: 'DRSdata',
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
   },
   description: "Dive into real-time and historical Formula 1 stats, all in one place.",
   icons: {
-    icon: '/icon.ico',
+    icon: `${basePath}/redcar.ico`,
   },
   openGraph: {
     title: 'DRSdata',
