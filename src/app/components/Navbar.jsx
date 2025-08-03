@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+const basePath = process.env.NODE_ENV === 'production' ? '/drsdata' : '';
+
 export default function Navbar() {
   return (
     <nav className="bg-red-600 py-2 px-4 sticky top-0 z-50 shadow-lg">
@@ -10,7 +12,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <div className="relative w-15 h-15 sm:w-20 sm:h-20">
             <Image 
-              src="/drsdata_logo_white.png"
+              src={`${basePath}/drsdata_logo_white.png`}
               alt="DRSdata Logo"
               fill
               className="object-contain"

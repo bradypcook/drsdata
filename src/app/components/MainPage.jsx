@@ -1,5 +1,7 @@
 // Manages the main title section on the home page, along with the iframe
 
+const basePath = process.env.NODE_ENV === 'production' ? '/drsdata' : '';
+
 export default function MainPageVideo() {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden">
@@ -10,7 +12,7 @@ export default function MainPageVideo() {
         muted
         playsInline
       >
-        <source src="/gp_background.mp4" type="video/mp4" />
+        <source src={`${basePath}/gp_background.mp4`} type="video/mp4" />
       </video>
 
       <div className="relative z-10 text-center px-4">
