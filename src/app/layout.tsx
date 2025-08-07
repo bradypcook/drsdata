@@ -14,7 +14,7 @@ const basePath = process.env.NODE_ENV === 'production' ? '/drsdata' : '';
 export const metadata: Metadata = {
   title: {
     default: 'DRSdata',
-    template: 'DRSdata - %s',
+    template: '%s - DRSdata',
   },
   description: "Dive into real-time and historical Formula 1 stats, all in one place.",
   icons: {

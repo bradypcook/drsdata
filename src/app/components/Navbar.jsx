@@ -21,9 +21,9 @@ export default function Navbar() {
           </div>
         </Link>
         <div className="flex space-x-4 sm:space-x-6 md:space-x-8 text-sm sm:text-base items-center font-bold">
-          <Link href="/current-season-stats">{new Date().getFullYear()} Stats</Link>
-          <Link href="/all-time-stats">All Time Stats</Link>
-          <Link href="/drs-bot">DRSbot</Link>
+          <Link href="/current-season-stats">{new Date().getFullYear()} Standings</Link>
+          <Link href="/race-scope-page">RaceScope</Link>
+          <Link href="/drs-bot-page">DRSbot</Link>
         </div>
       </div>
     </nav>
