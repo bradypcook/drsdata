@@ -288,7 +288,7 @@ export default function RaceScopeComponent() {
                     <div className="bg-zinc-600 border-2 border-[#c0c0c0] rounded-lg p-2 md:p-4 mb-2">
                       <div className="text-sm md:text-lg font-bold text-white">{predictions[1].code}</div>
                       <div className="text-gray-400 text-xs hidden md:block">{predictions[1].team}</div>
-                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[1].code]}%</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[1].code]}% <span className="hidden md:inline">confidence</span></div>
                     </div>
                     <div className="bg-[#c0c0c0] text-zinc-800 text-2xl md:text-4xl font-bold py-2 md:py-4 px-3 md:px-6 rounded">2</div>
                   </div>
@@ -300,7 +300,7 @@ export default function RaceScopeComponent() {
                     <div className="bg-zinc-600 border-2 border-[#ffd700] rounded-lg p-2 md:p-4 mb-2">
                       <div className="text-sm md:text-lg font-bold text-white">{predictions[0].code}</div>
                       <div className="text-gray-400 text-xs hidden md:block">{predictions[0].team}</div>
-                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[0].code]}%</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[0].code]}% <span className="hidden md:inline">confidence</span></div>
                     </div>
                     <div className="bg-[#ffd700] text-zinc-800 text-3xl md:text-5xl font-bold py-3 md:py-6 px-4 md:px-8 rounded">1</div>
                   </div>
@@ -312,7 +312,7 @@ export default function RaceScopeComponent() {
                     <div className="bg-zinc-600 border-2 border-[#cd7f32] rounded-lg p-2 md:p-4 mb-2">
                       <div className="text-sm md:text-lg font-bold text-white">{predictions[2].code}</div>
                       <div className="text-gray-400 text-xs hidden md:block">{predictions[2].team}</div>
-                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[2].code]}%</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[2].code]}% <span className="hidden md:inline">confidence</span></div>
                     </div>
                     <div className="bg-[#cd7f32] text-white text-2xl md:text-4xl font-bold py-2 md:py-4 px-3 md:px-6 rounded">3</div>
                   </div>
