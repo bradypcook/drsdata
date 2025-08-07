@@ -134,13 +134,9 @@ export default function RaceScopeComponent() {
     if (!selectedRace) return;
 
     // Simulate prediction calculation based on factors
-    let predictedOrder = [...allDrivers];
+    const predictedOrder = [...allDrivers];
     
     // Simple prediction algorithm based on factor weights
-    const raceData = races[selectedRace];
-    const actualPodium = raceData.actualPodium;
-    
-    // Boost actual podium finishers based on factors
     predictedOrder.sort(() => Math.random() - 0.5);
     
     // Ensure some realism by keeping strong performers near the top
