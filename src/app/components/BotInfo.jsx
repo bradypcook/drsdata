@@ -1,3 +1,5 @@
+{/**Two F1 APIs: OpenF1 API and FastF1 API */}
+
 export default function BotInfo({ boxes } ) {
   return (
     <section className="relative bg-black text-white py-12 px-4">

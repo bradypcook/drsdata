@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-{/**Two F1 APIs: OpenF1 API and FastF1 API */}
-
 interface Constructor {
   position: number;
   team: string;
@@ -32,8 +30,8 @@ export default function ConstructorStandings() {
     { position: 10, team: 'Alpine', code: 'ALP', points: 20, teamColor: '#FF69B4', drivers: ['Pierre Gasly', 'Franco Colapinto'] },
   ];
 
-  // Load standings data
-  const loadStandings = (): void => {
+  // Load standings data function
+  const loadStandings = () => {
     setLoading(true);
     
     // Simulate loading delay
@@ -47,6 +45,7 @@ export default function ConstructorStandings() {
   // Load data on component mount
   useEffect(() => {
     loadStandings();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Filter standings to show only constructors from 4th position onwards
