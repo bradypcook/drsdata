@@ -275,46 +275,46 @@ export default function RaceScopeComponent() {
         {predictions.length > 0 && (
           <div className="space-y-6">
             {/* Podium Predictions */}
-            <div className="bg-zinc-800 p-6 rounded-xl shadow-lg">
-              <div className="flex items-center gap-2 mb-6">
-                <span className="text-2xl">🏆</span>
-                <h3 className="text-xl font-semibold text-white">Podium Predictions</h3>
+            <div className="bg-zinc-800 p-3 md:p-6 rounded-xl shadow-lg">
+              <div className="flex items-center gap-2 mb-4 md:mb-6">
+                <span className="text-xl md:text-2xl">🏆</span>
+                <h3 className="text-lg md:text-xl font-semibold text-white">Podium Predictions</h3>
               </div>
               
-              <div className="flex justify-center items-end space-x-4">
+              <div className="flex justify-center items-end space-x-2 md:space-x-4">
                 {/* 2nd Place */}
                 {predictions[1] && (
-                  <div className="text-center">
-                    <div className="bg-zinc-600 border-2 border-[#c0c0c0] rounded-lg p-4 mb-2">
-                      <div className="text-lg font-bold text-white">{predictions[1].code}</div>
-                      <div className="text-gray-400 text-xs">{predictions[1].team}</div>
-                      <div className="text-green-400 font-medium mt-2">{confidence[predictions[1].code]}% confidence</div>
+                  <div className="text-center flex-1 max-w-[110px] md:max-w-none">
+                    <div className="bg-zinc-600 border-2 border-[#c0c0c0] rounded-lg p-2 md:p-4 mb-2">
+                      <div className="text-sm md:text-lg font-bold text-white">{predictions[1].code}</div>
+                      <div className="text-gray-400 text-xs hidden md:block">{predictions[1].team}</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[1].code]}%</div>
                     </div>
-                    <div className="bg-[#c0c0c0] text-zinc-800 text-4xl font-bold py-4 px-6 rounded">2</div>
+                    <div className="bg-[#c0c0c0] text-zinc-800 text-2xl md:text-4xl font-bold py-2 md:py-4 px-3 md:px-6 rounded">2</div>
                   </div>
                 )}
                 
                 {/* 1st Place */}
                 {predictions[0] && (
-                  <div className="text-center">
-                    <div className="bg-zinc-600 border-2 border-[#ffd700] rounded-lg p-4 mb-2">
-                      <div className="text-lg font-bold text-white">{predictions[0].code}</div>
-                      <div className="text-gray-400 text-xs">{predictions[0].team}</div>
-                      <div className="text-green-400 font-medium mt-2">{confidence[predictions[0].code]}% confidence</div>
+                  <div className="text-center flex-1 max-w-[130px] md:max-w-none">
+                    <div className="bg-zinc-600 border-2 border-[#ffd700] rounded-lg p-2 md:p-4 mb-2">
+                      <div className="text-sm md:text-lg font-bold text-white">{predictions[0].code}</div>
+                      <div className="text-gray-400 text-xs hidden md:block">{predictions[0].team}</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[0].code]}%</div>
                     </div>
-                    <div className="bg-[#ffd700] text-zinc-800 text-5xl font-bold py-6 px-8 rounded">1</div>
+                    <div className="bg-[#ffd700] text-zinc-800 text-3xl md:text-5xl font-bold py-3 md:py-6 px-4 md:px-8 rounded">1</div>
                   </div>
                 )}
                 
                 {/* 3rd Place */}
                 {predictions[2] && (
-                  <div className="text-center">
-                    <div className="bg-zinc-600 border-2 border-[#cd7f32] rounded-lg p-4 mb-2">
-                      <div className="text-lg font-bold text-white">{predictions[2].code}</div>
-                      <div className="text-gray-400 text-xs">{predictions[2].team}</div>
-                      <div className="text-green-400 font-medium mt-2">{confidence[predictions[2].code]}% confidence</div>
+                  <div className="text-center flex-1 max-w-[110px] md:max-w-none">
+                    <div className="bg-zinc-600 border-2 border-[#cd7f32] rounded-lg p-2 md:p-4 mb-2">
+                      <div className="text-sm md:text-lg font-bold text-white">{predictions[2].code}</div>
+                      <div className="text-gray-400 text-xs hidden md:block">{predictions[2].team}</div>
+                      <div className="text-green-400 text-xs md:font-medium md:mt-2">{confidence[predictions[2].code]}%</div>
                     </div>
-                    <div className="bg-[#cd7f32] text-white text-4xl font-bold py-4 px-6 rounded">3</div>
+                    <div className="bg-[#cd7f32] text-white text-2xl md:text-4xl font-bold py-2 md:py-4 px-3 md:px-6 rounded">3</div>
                   </div>
                 )}
               </div>
