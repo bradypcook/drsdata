@@ -139,8 +139,8 @@ export default function RaceScopeComponent() {
     // Simple prediction algorithm based on factor weights
     predictedOrder.sort(() => Math.random() - 0.5);
     
-    // Ensure some realism by keeping strong performers near the top
-    const strongPerformers = ['VER', 'LEC', 'NOR', 'SAI', 'PER'];
+    // Ensure semi-realistic by keeping top 6 in WDC near the top
+    const strongPerformers = ['VER', 'LEC', 'NOR', 'PIA', 'RUS','HAM'];
     predictedOrder.sort((a, b) => {
       const aStrong = strongPerformers.includes(a.code);
       const bStrong = strongPerformers.includes(b.code);

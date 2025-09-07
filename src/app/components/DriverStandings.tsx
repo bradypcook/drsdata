@@ -19,25 +19,25 @@ export default function DriverStandings() {
 
   // 2025 F1 Driver Standings (simulated current season data)
   const current2025Standings: Driver[] = [
-    { position: 1, driver: 'Oscar Piastri', code: 'PIA', team: 'McLaren', points: 284, number: 81, teamColor: '#fd8000' },
-    { position: 2, driver: 'Lando Norris', code: 'NOR', team: 'McLaren', points: 275, number: 4, teamColor: '#fd8000' },
-    { position: 3, driver: 'Max Verstappen', code: 'VER', team: 'Red Bull Racing', points: 187, number: 1, teamColor: '#15185f' },
-    { position: 4, driver: 'George Russell', code: 'RUS', team: 'Mercedes', points: 172, number: 63, teamColor: '#00f5d2' },
-    { position: 5, driver: 'Charles Leclerc', code: 'LEC', team: 'Ferrari', points: 151, number: 16, teamColor: '#fe0000' },
-    { position: 6, driver: 'Lewis Hamilton', code: 'HAM', team: 'Ferrari', points: 109, number: 44, teamColor: '#fe0000' },
-    { position: 7, driver: 'Kimi Antonelli', code: 'ANT', team: 'Mercedes', points: 64, number: 12, teamColor: '#00f5d2' },
-    { position: 8, driver: 'Alex Albon', code: 'ALB', team: 'Williams', points: 54, number: 23, teamColor: '#1868db' },
-    { position: 9, driver: 'Nico Hulkenberg', code: 'HUL', team: 'Kick Sauber', points: 37, number: 27, teamColor: '#00e701' },
-    { position: 10, driver: 'Esteban Ocon', code: 'OCO', team: 'Haas', points: 27, number: 31, teamColor: '#FFFFFF' },
-    { position: 11, driver: 'Fernando Alonso', code: 'ALO', team: 'Aston Martin', points: 26, number: 14, teamColor: '#00594f' },
-    { position: 12, driver: 'Lance Stroll', code: 'STR', team: 'Aston Martin', points: 26, number: 18, teamColor: '#00594f' },
-    { position: 13, driver: 'Isack Hadjar', code: 'HAD', team: 'Racing Bulls', points: 22, number: 6, teamColor: '#1534cc' },
+    { position: 1, driver: 'Oscar Piastri', code: 'PIA', team: 'McLaren', points: 324, number: 81, teamColor: '#fd8000' },
+    { position: 2, driver: 'Lando Norris', code: 'NOR', team: 'McLaren', points: 293, number: 4, teamColor: '#fd8000' },
+    { position: 3, driver: 'Max Verstappen', code: 'VER', team: 'Red Bull Racing', points: 230, number: 1, teamColor: '#15185f' },
+    { position: 4, driver: 'George Russell', code: 'RUS', team: 'Mercedes', points: 194, number: 63, teamColor: '#00f5d2' },
+    { position: 5, driver: 'Charles Leclerc', code: 'LEC', team: 'Ferrari', points: 163, number: 16, teamColor: '#fe0000' },
+    { position: 6, driver: 'Lewis Hamilton', code: 'HAM', team: 'Ferrari', points: 117, number: 44, teamColor: '#fe0000' },
+    { position: 7, driver: 'Alex Albon', code: 'ALB', team: 'Williams', points: 70, number: 23, teamColor: '#1868db' },
+    { position: 8, driver: 'Kimi Antonelli', code: 'ANT', team: 'Mercedes', points: 66, number: 12, teamColor: '#00f5d2' },
+    { position: 9, driver: 'Isack Hadjar', code: 'HAD', team: 'Racing Bulls', points: 38, number: 6, teamColor: '#1534cc' },
+    { position: 10, driver: 'Nico Hulkenberg', code: 'HUL', team: 'Kick Sauber', points: 37, number: 27, teamColor: '#00e701' },
+    { position: 11, driver: 'Lance Stroll', code: 'STR', team: 'Aston Martin', points: 32, number: 18, teamColor: '#00594f' },
+    { position: 12, driver: 'Fernando Alonso', code: 'ALO', team: 'Aston Martin', points: 30, number: 14, teamColor: '#00594f' },
+    { position: 13, driver: 'Esteban Ocon', code: 'OCO', team: 'Haas', points: 28, number: 31, teamColor: '#FFFFFF' },
     { position: 14, driver: 'Pierre Gasly', code: 'GAS', team: 'Alpine', points: 20, number: 10, teamColor: '#FF69B4' },
     { position: 15, driver: 'Liam Lawson', code: 'LAW', team: 'Racing Bulls', points: 20, number: 30, teamColor: '#1534cc' },
-    { position: 16, driver: 'Carlos Sainz', code: 'SAI', team: 'Williams', points: 16, number: 55, teamColor: '#1868db' },
-    { position: 17, driver: 'Gabriel Bortoleto', code: 'GAB', team: 'Kick Sauber', points: 14, number: 5, teamColor: '#00e701' },
-    { position: 18, driver: 'Yuki Tsunoda', code: 'TSU', team: 'Red Bull Racing', points: 10, number: 22, teamColor: '#15185f' },
-    { position: 19, driver: 'Oliver Bearman', code: 'BEA', team: 'Haas', points: 8, number: 87, teamColor: '#FFFFFF' },
+    { position: 16, driver: 'Gabriel Bortoleto', code: 'GAB', team: 'Kick Sauber', points: 18, number: 5, teamColor: '#00e701' },
+    { position: 17, driver: 'Oliver Bearman', code: 'BEA', team: 'Haas', points: 16, number: 87, teamColor: '#FFFFFF' },
+    { position: 18, driver: 'Carlos Sainz', code: 'SAI', team: 'Williams', points: 16, number: 55, teamColor: '#1868db' },
+    { position: 19, driver: 'Yuki Tsunoda', code: 'TSU', team: 'Red Bull Racing', points: 12, number: 22, teamColor: '#15185f' },
     { position: 20, driver: 'Franco Colapinto', code: 'COL', team: 'Alpine', points: 0, number: 43, teamColor: '#FF69B4' },
     { position: 21, driver: 'Jack Doohan', code: 'DOO', team: 'Alpine', points: 0, number: 7, teamColor: '#FF69B4' },
   ];
@@ -81,7 +81,7 @@ export default function DriverStandings() {
             {/* Header Section */}
             <div className="p-6 bg-zinc-700 border-b border-zinc-600 text-center">
               <h2 className="text-3xl font-bold text-white mb-2">WDC Standings</h2>
-              <p className="text-gray-300 mb-3">2025 Championship after Round 14</p>
+              <p className="text-gray-300 mb-3">2025 Championship after Round 16</p>
               {lastUpdated && (
                 <p className="text-gray-400 text-sm mb-4">
                   Last updated: {lastUpdated.toLocaleString()}

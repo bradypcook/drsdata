@@ -18,15 +18,15 @@ export default function ConstructorStandings() {
 
   // 2025 F1 Constructor Standings (simulated current season data)
   const current2025Standings: Constructor[] = [
-    { position: 1, team: 'McLaren', code: 'MCL', points: 559, teamColor: '#fd8000', drivers: ['Lando Norris', 'Oscar Piastri'] },
-    { position: 2, team: 'Ferrari', code: 'FER', points: 260, teamColor: '#fe0000', drivers: ['Charles Leclerc', 'Lewis Hamilton'] },
-    { position: 3, team: 'Mercedes', code: 'MER', points: 236, teamColor: '#00f5d2', drivers: ['George Russell', 'Kimi Antonelli'] },
-    { position: 4, team: 'Red Bull Racing', code: 'RBR', points: 194, teamColor: '#15185f', drivers: ['Max Verstappen', 'Yuki Tsunoda'] },
-    { position: 5, team: 'Williams', code: 'WIL', points: 70, teamColor: '#1868db', drivers: ['Carlos Sainz', 'Alex Albon'] },
-    { position: 6, team: 'Aston Martin', code: 'AST', points: 52, teamColor: '#00594f', drivers: ['Fernando Alonso', 'Lance Stroll'] },
-    { position: 7, team: 'Kick Sauber', code: 'SAU', points: 51, teamColor: '#00e701', drivers: ['Nico Hulkenberg', 'Gabriel Bortoleto'] },
-    { position: 8, team: 'Racing Bulls', code: 'RB', points: 45, teamColor: '#1534cc', drivers: ['Isack Hadjar', 'Liam Lawson'] },
-    { position: 9, team: 'Haas', code: 'HAS', points: 35, teamColor: '#FFFFFF', drivers: ['Esteban Ocon', 'Oliver Bearman'] },
+    { position: 1, team: 'McLaren', code: 'MCL', points: 617, teamColor: '#fd8000', drivers: ['Lando Norris', 'Oscar Piastri'] },
+    { position: 2, team: 'Ferrari', code: 'FER', points: 280, teamColor: '#fe0000', drivers: ['Charles Leclerc', 'Lewis Hamilton'] },
+    { position: 3, team: 'Mercedes', code: 'MER', points: 260, teamColor: '#00f5d2', drivers: ['George Russell', 'Kimi Antonelli'] },
+    { position: 4, team: 'Red Bull Racing', code: 'RBR', points: 239, teamColor: '#15185f', drivers: ['Max Verstappen', 'Yuki Tsunoda'] },
+    { position: 5, team: 'Williams', code: 'WIL', points: 86, teamColor: '#1868db', drivers: ['Carlos Sainz', 'Alex Albon'] },
+    { position: 6, team: 'Aston Martin', code: 'AST', points: 62, teamColor: '#00594f', drivers: ['Fernando Alonso', 'Lance Stroll'] },
+    { position: 7, team: 'Racing Bulls', code: 'RB', points: 61, teamColor: '#1534cc', drivers: ['Isack Hadjar', 'Liam Lawson'] },
+    { position: 8, team: 'Kick Sauber', code: 'SAU', points: 55, teamColor: '#00e701', drivers: ['Nico Hulkenberg', 'Gabriel Bortoleto'] },
+    { position: 9, team: 'Haas', code: 'HAS', points: 44, teamColor: '#FFFFFF', drivers: ['Esteban Ocon', 'Oliver Bearman'] },
     { position: 10, team: 'Alpine', code: 'ALP', points: 20, teamColor: '#FF69B4', drivers: ['Pierre Gasly', 'Franco Colapinto'] },
   ];
 
@@ -69,7 +69,7 @@ export default function ConstructorStandings() {
             {/* Header Section */}
             <div className="p-6 bg-zinc-700 border-b border-zinc-600 text-center">
               <h2 className="text-3xl font-bold text-white mb-2">WCC Standings</h2>
-              <p className="text-gray-300 mb-3">2025 Championship after Round 14</p>
+              <p className="text-gray-300 mb-3">2025 Championship after Round 16</p>
               {lastUpdated && (
                 <p className="text-gray-400 text-sm mb-4">
                   Last updated: {lastUpdated.toLocaleString()}
